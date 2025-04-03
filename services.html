@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Services – ISM Communication Visuelle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 0 16px;
+      }
+  
+      header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+      }
+  
+      header img {
+        height: 60px;
+      }
+  
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+  
+      nav a {
+        font-size: 0.95em;
+        margin: 5px;
+      }
+  
+      .hero-overlay {
+        padding: 30px 20px;
+      }
+  
+      .hero-overlay h2 {
+        font-size: 1.8em;
+      }
+  
+      .hero-overlay p {
+        font-size: 1em;
+      }
+  
+      .services,
+      #avantages > div,
+      #avis-clients > div,
+      #etapes > div {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .card {
+        width: 100% !important;
+      }
+  
+      .service-bloc,
+      .service-bloc.reverse {
+        flex-direction: column !important;
+        text-align: center;
+      }
+  
+      .service-bloc img {
+        width: 100% !important;
+      }
+  
+      .carousel-multi {
+        overflow-x: auto;
+      }
+  
+      .carousel-multi::-webkit-scrollbar {
+        display: none;
+      }
+  
+      form input,
+      form textarea {
+        width: 100%;
+      }
+  
+      footer {
+        padding: 40px 20px;
+        font-size: 0.9em;
+      }
+  
+      footer p {
+        margin: 10px 0;
+      }
+  
+      #bandeau-contact {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        font-size: 0.95em;
+      }
+  
+      .btn {
+        font-size: 0.95em;
+        padding: 10px 20px;
+      }
+  
+      a.btn {
+        padding: 10px 20px !important;
+      }
+    }
+  </style>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f57921;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      margin-bottom: 60px;
+    }
+
+    .service-bloc {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 100px;
+    }
+
+    .service-bloc.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-bloc img {
+      width: 45%;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .service-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .service-text h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #f57921;
+    }
+
+    .service-text p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .service-text ul {
+      padding-left: 20px;
+      color: #333;
+    }
+
+    .service-text ul li {
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      margin-top: 80px;
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+    }
+
+    .faq-item {
+      margin-bottom: 30px;
+    }
+
+    .faq-item h4 {
+      color: #f57921;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .cta a {
+      background-color: #f57921;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 100px;
+    }
+
+    footer a {
+      color: #f57921;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo-ism.png" alt="Logo ISM" />
+    </a>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0787410086" class="btn" style="background-color: #f57921; border-radius: 999px; padding: 8px 16px; color: white;">07 87 41 00 86</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Nos services</h1>
+
+    <!-- Service 1 -->
+    <div class="service-bloc">
+      <img src="serigraphie-textile.png" alt="Sérigraphie textile" />
+      <div class="service-text">
+        <h2>Sérigraphie textile</h2>
+        <p>Nous réalisons vos impressions textiles sur-mesure : t-shirts, sweats, tote-bags, vêtements de travail... Idéal pour vos événements, équipes sportives, entreprises ou associations.</p>
+        <ul>
+          <li>Marquage en petite ou grande série</li>
+          <li>Large choix de couleurs et finitions</li>
+          <li>Tenue longue durée au lavage</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-bloc reverse">
+      <img src="serigraphie-flocage.png" alt="Flocage véhicule" />
+      <div class="service-text">
+        <h2>Flocage de véhicules</h2>
+        <p>Rendez votre entreprise visible partout grâce au flocage professionnel de vos véhicules utilitaires, camions, fourgons ou voitures. C’est votre pub mobile !</p>
+        <ul>
+          <li>Marquage lettrage ou total covering</li>
+          <li>Résistant aux UV et aux intempéries</li>
+          <li>Pose rapide et soignée</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-bloc">
+      <img src="enseigne-professionnelle.png" alt="Enseignes pro" />
+      <div class="service-text">
+        <h2>Enseignes professionnelles</h2>
+        <p>Nous créons, fabriquons et posons vos enseignes pour boutiques, bureaux ou bâtiments industriels. Valorisez votre image dès la façade.</p>
+        <ul>
+          <li>Enseignes rigides, lumineuses ou en relief</li>
+          <li>Impression haute qualité sur support durable</li>
+          <li>Étude, maquette et installation comprises</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+      <h2>Questions fréquentes</h2>
+
+      <div class="faq-item">
+        <h4>Est-ce que vous imprimez à l’unité ?</h4>
+        <p>Oui, nous proposons des impressions à partir d’un exemplaire, selon les supports.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Quels sont les délais de réalisation ?</h4>
+        <p>Tout dépend du projet, mais nous sommes généralement très réactifs. Comptez de 24h à quelques jours.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Pouvons-nous voir une maquette avant production ?</h4>
+        <p>Bien sûr ! Nous vous envoyons une maquette visuelle pour validation avant toute impression.</p>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="cta">
+      <p>Vous avez un projet ? Parlons-en !</p>
+      <a href="contact.html">Demander un devis</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> ISM Communication Visuelle. Tous droits réservés.</p>
+    <p>📞 <a href="tel:0787410086">07 87 41 00 86</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

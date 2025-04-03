@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie – ISM Communication Visuelle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f57921;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #f57921;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo-ism.png" alt="Logo ISM" />
+    </a>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0787410086" class="btn" style="background-color: #f57921; border-radius: 999px; padding: 8px 16px; color: white;">07 87 41 00 86</a>
+    </nav>
+  </header>
+
+  <h1>Nos réalisations</h1>
+
+  <div class="gallery">
+    <img src="image-principale.png" alt="Projet 1" />
+    <img src="serigraphie-flocage.png" alt="Projet 2" />
+    <img src="serigraphie-textile.png" alt="Projet 3" />
+    <img src="serigraphie-flocage.png" alt="Projet 4" />
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> ISM Communication Visuelle. Tous droits réservés.</p>
+    <p>📞 <a href="tel:0787410086">07 87 41 00 86</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

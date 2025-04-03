@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – ISM Communication Visuelle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f57921;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #f57921;
+      color: white;
+      padding: 14px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d46013;
+    }
+
+    .call-banner {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .call-banner a {
+      background-color: #f57921;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #f57921;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+        <img src="logo-ism.png" alt="Logo ISM" style="height: 80px;" />
+      </a>
+          <nav>
+      <a href="services.html">Services</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0787410086" class="btn" style="background-color: #f57921; border-radius: 999px; padding: 8px 16px; color: white;">07 87 41 00 86</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Contactez-nous</h1>
+    <div class="contact-info">
+      <p>📍 152 Chemin des Mulets, 84300 Cavaillon</p>
+      <p>🕒 Du lundi au samedi — 9h à 18h</p>
+      <p>📞 <strong>07 87 41 00 86</strong></p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre e-mail" required />
+      <textarea placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="call-banner">
+      <p>Vous préférez nous parler directement ?</p>
+      <a href="tel:0787410086">📞 Appeler maintenant</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> ISM Communication Visuelle. Tous droits réservés.</p>
+    <p>📞 <a href="tel:0787410086">07 87 41 00 86</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
