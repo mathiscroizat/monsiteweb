@@ -118,10 +118,21 @@
         width: 100%;
         overflow-x: hidden;
         scroll-behavior: smooth;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         background: #fff;
         color: #222;
       }
+
+      /* Appliquer la couleur noire à toutes les icônes sur le site */
+i, svg {
+  color: #222222; /* Noir pour toutes les icônes */
+}
+
+/* Effet au survol des icônes : changer la couleur au survol */
+i:hover, svg:hover {
+  color: #f57921; /* Orange au survol */
+}
+
 
       header {
         background-color: white;
@@ -153,7 +164,7 @@
         color: #f57921;
       }
 
-      .hero-bg {
+      .hero-bg { /* l'image princiaple */
         background-image: url('image-principale.png');
         background-size: cover;
         background-position: center;
@@ -165,35 +176,37 @@
         align-items: center;
       }
 
-      .hero-bg::before {
+      .hero-bg::before { /* teinte noir de l'image principale */
         content: "";
         position: absolute;
         inset: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.4);
       }
 
-      .hero-overlay {
+      .hero-overlay { /* Petit carré blanc */
         position: relative;
         z-index: 2;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0);
         padding: 50px;
         border-radius: 12px;
         max-width: 700px;
         text-align: center;
       }
 
-      .hero-overlay h2 {
+      .hero-overlay h2 { /* texte sur l'image principale */
         font-size: 2.8em;
         margin-bottom: 20px;
+        color: #ffffff;
       }
 
-      .hero-overlay p {
+      .hero-overlay p { /* texte sur l'image principale */
         font-size: 1.2em;
         margin-bottom: 30px;
+        color: #ffffff;
       }
 
       .btn {
-        background-color: #f57921;
+        background-color: #E0643B;
         color: white;
         padding: 12px 26px;
         border: none;
@@ -205,7 +218,7 @@
       }
 
       .btn:hover {
-        background-color: #d46013;
+        background-color: #E0643B;
       }
 
       .section-title {
@@ -245,7 +258,7 @@
       .service-text h4 {
         font-size: 1.8em;
         margin-bottom: 15px;
-        color: #f57921;
+        color: #E0643B;
       }
 
       .service-text p {
@@ -271,7 +284,7 @@
       }
 
       form button {
-        background-color: #f57921;
+        background-color: #E0643B;
         color: white;
         border: none;
         padding: 12px;
@@ -290,7 +303,7 @@
       }
 
       footer a {
-        color: #f57921;
+        color: #E0643B;
         text-decoration: none;
       }
 
@@ -317,6 +330,27 @@
   WhatsApp
 </a>
 
+<a href="https://www.instagram.com/yourInstagramPage" target="_blank" style="
+  position: fixed;
+  bottom: 50px; /* Change cette valeur pour ajuster la distance entre WhatsApp et Instagram */
+  right: 20px;
+  background-color: #E4405F;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" style="width: 20px; height: 20px;" />
+  Instagram
+</a>
+
 
   <body>
     <header>
@@ -328,7 +362,7 @@
         <a href="galerie.html">Galerie</a>
         <a href="apropos.html">À propos</a>
         <a href="contact.html">Contact</a>
-        <a href="tel:0787410086" class="btn" style="background-color: #f57921; border-radius: 999px; padding: 8px 16px; color: white;">07 87 41 00 86</a>
+        <a href="tel:04 90 60 29 44" class="btn" style="background-color: #E0643B; border-radius: 999px; padding: 8px 16px; color: white;">04 90 60 29 44</a>
       </nav>
     </header>
 
@@ -347,32 +381,32 @@
     
         <!-- Bloc 1 -->
         <div class="card" style="width: 320px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://cdn-icons-png.flaticon.com/128/2784/2784461.png" alt="Sérigraphie" style="height: 60px; margin-bottom: 20px;" />
-          <h4 style="color: #f57921; font-size: 1.4em; margin-bottom: 10px;">Sérigraphie textile</h4>
+          <img src="tee-shirts.png" alt="Sérigraphie" style="height: 60px; margin-bottom: 20px;" />
+          <h4 style="color: #E0643B; font-size: 1.4em; margin-bottom: 10px;">Sérigraphie textile</h4>
           <p style="margin-bottom: 20px;">
             Nous personnalisons vos textiles : t-shirts, sweats, vêtements de travail ou goodies. Idéal pour les pros, les assos et les événements !
           </p>
-          <a href="services.html" class="btn" style="background-color: #f57921; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none;">Voir plus</a>
+          <a href="services.html" class="btn" style="background-color: #E0643B; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none;">Voir plus</a>
         </div>
     
         <!-- Bloc 2 -->
         <div class="card" style="width: 320px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://cdn-icons-png.flaticon.com/128/1086/1086933.png" alt="Flocage véhicule" style="height: 60px; margin-bottom: 20px;" />
-          <h4 style="color: #f57921; font-size: 1.4em; margin-bottom: 10px;">Flocage de véhicules</h4>
+          <img src="voiture-fourgon.png" alt="Flocage véhicule" style="height: 60px; margin-bottom: 20px;" />
+          <h4 style="color: #E0643B; font-size: 1.4em; margin-bottom: 10px;">Flocage de véhicules</h4>
           <p style="margin-bottom: 20px;">
             Marquez les esprits en flocant vos véhicules. Publicité mobile, visibilité assurée et pose rapide dans notre atelier à Cavaillon.
           </p>
-          <a href="services.html" class="btn" style="background-color: #f57921; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none;">Voir plus</a>
+          <a href="services.html" class="btn" style="background-color: #E0643B; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none;">Voir plus</a>
         </div>
     
         <!-- Bloc 3 -->
         <div class="card" style="width: 320px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://cdn-icons-png.flaticon.com/128/2954/2954931.png" alt="Enseignes" style="height: 60px; margin-bottom: 20px;" />
-          <h4 style="color: #f57921; font-size: 1.4em; margin-bottom: 10px;">Enseignes professionnelles</h4>
+          <img src="enseigne.png" alt="Enseignes" style="height: 60px; margin-bottom: 20px;" />
+          <h4 style="color: #E0643B; font-size: 1.4em; margin-bottom: 10px;">Enseignes professionnelles</h4>
           <p style="margin-bottom: 20px;">
             Nous créons et posons vos enseignes sur-mesure : panneaux, lettrage, enseignes lumineuses… mettez votre commerce en valeur.
           </p>
-          <a href="services.html" class="btn" style="background-color: #f57921; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none;">Voir plus</a>
+          <a href="services.html" class="btn" style="background-color: #E0643B; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none;">Voir plus</a>
         </div>
     
       </div>
@@ -393,26 +427,26 @@
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto; text-align: center;">
         
         <div style="flex: 1; min-width: 220px;">
-          <img src="https://cdn-icons-png.flaticon.com/128/1828/1828919.png" alt="Qualité" style="height: 50px; margin-bottom: 15px;">
-          <h4 style="color: #f57921; margin-bottom: 10px;">Qualité pro</h4>
+          <img src="qualite-superieure.png" alt="Qualité" style="height: 50px; margin-bottom: 15px;">
+          <h4 style="color: #E0643B; margin-bottom: 10px;">Qualité pro</h4>
           <p>Impression haut de gamme avec des finitions soignées pour un rendu impeccable.</p>
         </div>
     
         <div style="flex: 1; min-width: 220px;">
-          <img src="https://cdn-icons-png.flaticon.com/128/3524/3524388.png" alt="Réactivité" style="height: 50px; margin-bottom: 15px;">
-          <h4 style="color: #f57921; margin-bottom: 10px;">Réactivité</h4>
+          <img src="chrono.png" alt="Réactivité" style="height: 50px; margin-bottom: 15px;">
+          <h4 style="color: #E0643B; margin-bottom: 10px;">Réactivité</h4>
           <p>Devis et délais rapides. On s’adapte à vos urgences et vos besoins.</p>
         </div>
     
         <div style="flex: 1; min-width: 220px;">
-          <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Accompagnement" style="height: 50px; margin-bottom: 15px;">
-          <h4 style="color: #f57921; margin-bottom: 10px;">Conseil & suivi</h4>
+          <img src="conseil.png" alt="Accompagnement" style="height: 50px; margin-bottom: 15px;">
+          <h4 style="color: #E0643B; margin-bottom: 10px;">Conseil & suivi</h4>
           <p>On vous accompagne à chaque étape pour un résultat à votre image.</p>
         </div>
     
         <div style="flex: 1; min-width: 220px;">
-          <img src="https://cdn-icons-png.flaticon.com/128/726/726623.png" alt="Local" style="height: 50px; margin-bottom: 15px;">
-          <h4 style="color: #f57921; margin-bottom: 10px;">Impression locale</h4>
+          <img src="imprimante.png" alt="Local" style="height: 50px; margin-bottom: 15px;">
+          <h4 style="color: #E0643B; margin-bottom: 10px;">Impression locale</h4>
           <p>Entreprise implantée à Cavaillon, proche de vous, au service du local.</p>
         </div>
     
@@ -444,25 +478,25 @@
     
         <div style="flex: 1; min-width: 200px; text-align: center;">
           <img src="https://cdn-icons-png.flaticon.com/128/2910/2910764.png" alt="1" style="height: 50px; margin-bottom: 15px;" />
-          <h4 style="color: #f57921;">1. Brief</h4>
+          <h4 style="color: #E0643B;">1. Brief</h4>
           <p>On discute de vos besoins, idées, formats et quantités.</p>
         </div>
     
         <div style="flex: 1; min-width: 200px; text-align: center;">
-          <img src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="2" style="height: 50px; margin-bottom: 15px;" />
-          <h4 style="color: #f57921;">2. Maquette</h4>
+          <img src="modelisation-3d.png" alt="2" style="height: 50px; margin-bottom: 15px;" />
+          <h4 style="color: #E0643B;">2. Maquette</h4>
           <p>On vous envoie une maquette avant validation.</p>
         </div>
     
         <div style="flex: 1; min-width: 200px; text-align: center;">
           <img src="https://cdn-icons-png.flaticon.com/128/1548/1548580.png" alt="3" style="height: 50px; margin-bottom: 15px;" />
-          <h4 style="color: #f57921;">3. Impression</h4>
+          <h4 style="color: #E0643B;">3. Impression</h4>
           <p>On lance la production dans notre atelier à Cavaillon.</p>
         </div>
     
         <div style="flex: 1; min-width: 200px; text-align: center;">
-          <img src="https://cdn-icons-png.flaticon.com/128/726/726448.png" alt="4" style="height: 50px; margin-bottom: 15px;" />
-          <h4 style="color: #f57921;">4. Livraison</h4>
+          <img src="livraison-rapide.png" alt="4" style="height: 50px; margin-bottom: 15px;" />
+          <h4 style="color: #E0643B;">4. Livraison</h4>
           <p>Vous récupérez votre commande ou on vous l’expédie.</p>
         </div>
     
@@ -492,7 +526,7 @@
       </div>
     
       <div style="text-align: center; margin-top: 40px;">
-        <a href="galerie.html" style="background-color: #f57921; color: white; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold;">Voir la galerie complète</a>
+        <a href="galerie.html" style="background-color: #E0643B; color: white; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold;">Voir la galerie complète</a>
       </div>
     
       <script>
@@ -525,11 +559,11 @@
     
         <!-- Texte -->
         <div style="flex: 1; min-width: 280px;">
-          <h3 style="font-size: 2.2em; margin-bottom: 20px; color: #f57921;">À propos de nous</h3>
+          <h3 style="font-size: 2.2em; margin-bottom: 20px; color: #E0643B;">À propos de nous</h3>
           <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 25px;">
             ISM est une imprimerie locale à Cavaillon, passionnée par la personnalisation textile et la communication visuelle. Nous accompagnons artisans, entreprises et particuliers dans tous leurs projets sur-mesure.
           </p>
-          <a href="apropos.html" style="background-color: #f57921; color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold;">Découvrir notre histoire</a>
+          <a href="apropos.html" style="background-color: #E0643B; color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-weight: bold;">Découvrir notre histoire</a>
         </div>
     
       </div>
@@ -551,38 +585,8 @@
 
     <footer>
       <p>© <span id="year"></span> ISM Communication Visuelle. Tous droits réservés.</p>
-      <p>📍 152 Chemin des Mulets, 84300 Cavaillon | 📞 <a href="tel:0787410086">07 87 41 00 86</a></p>
+      <p> 1950 Chem. de Saint-Gens, 84200 Carpentras |  <a href="tel:04 90 60 29 44">04 90 60 29 44</a></p>
     </footer>
-
-    <div id="bandeau-contact" style="
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f57921;
-  color: white;
-  text-align: center;
-  padding: 12px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  z-index: 999;
-  font-weight: 600;
-  font-size: 1em;
-">
-  <span>Besoin d’un conseil ou d’un devis rapide ?</span>
-  <a href="tel:0787410086" style="
-    background-color: #fff;
-    color: #f57921;
-    padding: 8px 16px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: bold;
-  ">
-    📞 Appeler maintenant
-  </a>
-</div>
 
 
     <script>
